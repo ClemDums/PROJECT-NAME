@@ -45,10 +45,31 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
+.btn-small {
+  font-family: "Montserrat";
+  border: 0,5px solid #000000;
+  background-color: grey;
+  border-radius: 12px;
+  color: black;
+  width: 70px;
+  cursor: pointer;
+  height: 30px;
+  padding: 0;
+}
+
 .card-destination img {
   height: 200px;
   width: 100%;
   object-fit: cover;
+}
+
+.card-destination-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  flex-direction: row;
 }
 
 .card-destination-infos h2 {
@@ -59,10 +80,10 @@
   line-height: 24px;
   display: flex;
   align-items: center;
+  text-align: left;
   letter-spacing: 0.02em;
   color: #8E3E3E;
-
-
+  width: 210px;
 }
 
 .card-destination-infos p {
@@ -73,13 +94,20 @@
   line-height: 20px;
   letter-spacing: 0.02em;
   color: #000000;
+  text-align: left;
 }
 
+.card-description p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #000000;
+  text-align: left;
+}
 
-.card-destination .card-destination-infos {
-  padding: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  position: relative;
+.card-description {
+  margin: 10px;
 }
