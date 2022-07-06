@@ -11,7 +11,7 @@ require 'faker'
   destination = Destination.new(
     city: Faker::Address.city,
     country: Faker::Address.country,
-    description: Faker::Lorem.paragraph(sentence_count: 3, supplemental: true),
+    description: Faker::Lorem.paragraph(sentence_count: 5, supplemental: true),
     price_per_day: rand(20..200),
     photo: Faker::LoremPixel.image(size: '50x60', is_gray: false, category: 'sports')
   )

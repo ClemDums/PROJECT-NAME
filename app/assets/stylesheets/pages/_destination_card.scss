@@ -39,10 +39,16 @@
   }
 }
 
-.card-destination {
+.card-content {
   overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.card-content img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .btn-small {
@@ -57,13 +63,8 @@
   padding: 0;
 }
 
-.card-destination img {
-  height: 200px;
-  width: 100%;
-  object-fit: cover;
-}
 
-.card-destination-infos {
+.card-destination {
   padding: 16px;
   display: flex;
   justify-content: space-between;
@@ -72,7 +73,7 @@
   flex-direction: row;
 }
 
-.card-destination-infos h2 {
+.card-destination h2 {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
@@ -86,7 +87,7 @@
   width: 210px;
 }
 
-.card-destination-infos p {
+.card-destination p {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 300;

@@ -5,6 +5,7 @@
   </div>
 </div>
 
+
 <p>All the trips you ever dreamed of at your fingertips</p>
 
 <form class="form-wrapper">
@@ -17,18 +18,17 @@
 
   <% @destinations.each do |destination|%>
   <%= link_to destination_path(destination), class:"no-underline" do %>
-    <div class="card-destination">
+
+    <div class="card-content">
       <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
-      <div class="card-destination-infos">
-            <h2><%= destination.city %>, <%= destination.country%></h2>
-            <p><%= destination.price_per_day %>€ /day</p>
+      <div class="card-destination">
+          <h2><%= destination.city %>, <%= destination.country%></h2>
+          <p><%= destination.price_per_day %>€ /day</p>
       </div>
       <div class="card-description">
         <p><%= destination.description %></p>
       </div>
-
       <div class="btn-small"> More </div>
-
     </div>
 
     <% end %>
