@@ -1,0 +1,13 @@
+<div class="banner"></div>
+
+<h2>All the trips you ever dreamed of at your fingertips</h2>
+
+<div class="searchbar"></div>
+
+<div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-4/5 mx-auto gap-3">
+  <% @destinations.each do |destination|%>
+  <%= render 'destination_card', destination: destination, class: 'w-full' %>
+  <% end %>
+</div>
+
+<div class="footer"></div>

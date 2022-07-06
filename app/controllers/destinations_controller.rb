@@ -13,5 +13,4 @@ class DestinationsController < ApplicationController
   def set_destination
     @destination = Destination.find(params[:id])
   end
-
 end
