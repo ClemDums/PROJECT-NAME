@@ -5,23 +5,30 @@
   </div>
 </div>
 
-<div class="baseline"><p>All the trips you ever dreamed of at your fingertips</p></div>
+<p>All the trips you ever dreamed of at your fingertips</p>
 
-<div class="searchbar">
-  <%= form_tag destinations_path, method: :get, class: "d-flex" do %>
-    <%= text_field_tag :query,
-      params[:query],
-      class: "form-control",
-      placeholder: "I want to travel to"
-    %>
-    <%= submit_tag "Go!", class: "btn btn-primary" %>
-  <% end %>
-</div>
+<form class="form-wrapper">
+    <input type="text" id="search" placeholder="I want to travel to..." required>
+    <input type="submit" value="go" id="submit">
+</form>
 
-<div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-4/5 mx-auto gap-3">
+
+<div class="all-cards">
+
   <% @destinations.each do |destination|%>
-  <%= render 'destination_card', destination: destination, class: 'w-full' %>
+  <%= link_to destination_path(destination), class:"no-underline" do %>
+    <div class="card-destination">
+      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+      <div class="card-destination-infos">
+          <h2><%= destination.city %></h2>
+          <p><%= destination.description %></p>
+          <h2 class="card-destination-pricing"><%= destination.price_per_day %></h2>
+          <div class="btn-small"></div>
+      </div>
+    </div>
+    <% end %>
   <% end %>
+
 </div>
 
 <div class="footer">

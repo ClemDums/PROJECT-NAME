@@ -1,0 +1,52 @@
+.form-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+
+.form-wrapper #search {
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 100;
+  border: 1px solid #000000;
+  border-radius: 12px;
+  color: #888888;
+  height: 30px;
+  padding: 10px;
+  width: 320px;
+}
+
+.form-wrapper #search:-moz-placeholder,
+.form-wrapper #search:-ms-input-placeholder,
+.form-wrapper #search::-webkit-input-placeholder {
+  color: black;
+  font-weight: normal;
+  font-family: "Montserrat";
+}
+
+.form-wrapper #submit {
+  font-family: "Montserrat";
+  border: 0,5px solid #000000;
+  border-radius: 12px;
+  color: black;
+  width: 70px;
+  cursor: pointer;
+  height: 30px;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.form-wrapper #submit:active {
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+  outline: 0;
+}
+
+.form-wrapper #submit::-moz-focus-inner {
+  border: 0;
+}
