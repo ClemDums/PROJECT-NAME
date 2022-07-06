@@ -1,8 +1,22 @@
-<div class="banner"></div>
+<div class="banner">
+  <div class="container">
+    <h1>HOTELS & TRIPS</h1>
+    <p>Welcome Michel !</p>
+  </div>
+</div>
 
-<h2>All the trips you ever dreamed of at your fingertips</h2>
+<div class="baseline"><p>All the trips you ever dreamed of at your fingertips</p></div>
 
-<div class="searchbar"></div>
+<div class="searchbar">
+  <%= form_tag destinations_path, method: :get, class: "d-flex" do %>
+    <%= text_field_tag :query,
+      params[:query],
+      class: "form-control",
+      placeholder: "I want to travel to"
+    %>
+    <%= submit_tag "Go!", class: "btn btn-primary" %>
+  <% end %>
+</div>
 
 <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-4/5 mx-auto gap-3">
   <% @destinations.each do |destination|%>
@@ -10,4 +24,15 @@
   <% end %>
 </div>
 
-<div class="footer"></div>
+<div class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="footer-copyright">
+    This footer is made with <i class="fas fa-heart"></i> by Clémence
+  </div>
+</div>

@@ -1,0 +1,29 @@
+.banner {
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/devgoesb6/image/upload/v1657109307/photo-1656955191730-bea43b96a2e0_drcjok.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 20px 0;
+}
+
+.banner h1 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #000000;
+
+}
+
+.banner p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #000000;
+}

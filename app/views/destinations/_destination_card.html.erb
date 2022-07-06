@@ -1,13 +1,16 @@
-<%= link_to destination_path(destination), class:"no-underline" do %>
+<%= link_to destinations_path(destination), class:"no-underline" do %>
 <div class="card-destination">
   <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+
   <div class="card-destination-infos">
     <div>
       <h2><%= destination.city.country %></h2>
       <p><%= destination.description %></p>
     </div>
     <h2 class="card-destination-pricing"><%= destination.price_per_day %></h2>
+    <div class="btn-flat"></div>
   </div>
-  <div class="button">More</div>
+
 </div>
 <% end %>
+Footer
